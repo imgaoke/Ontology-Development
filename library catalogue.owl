@@ -1,0 +1,434 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#"
+     xml:base="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-5="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#hasAuthor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#hasAuthor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#nationality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#isWrittenBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#isWrittenBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#writes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#nationality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#nationality">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Author"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#writes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#writes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Author"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Book"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#genre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#genre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#title">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#year">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Africa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Africa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#America -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#America">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Asia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Asia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Author -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Author"/>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Book -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Book"/>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Books_Published_after_2000 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Books_Published_after_2000">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#year"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Country"/>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Europe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Europe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Science_Fiction_Books -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Science_Fiction_Books">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#genre"/>
+                <owl:hasValue>Science Fiction</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#books_by_European_Authors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#books_by_European_Authors">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#isWrittenBy"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#nationality"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Europe"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Around_the_World_in_Eighty_Days -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Around_the_World_in_Eighty_Days">
+        <rdf:type rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Book"/>
+        <isWrittenBy rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Jules_Verne"/>
+        <genre>Science Fiction</genre>
+        <title>Around the World in Eighty Days</title>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1873</year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Calculating_God -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Calculating_God">
+        <rdf:type rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Book"/>
+        <isWrittenBy rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Robert_James_Sawyer"/>
+        <genre>Science Fiction</genre>
+        <title>Calculating God</title>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Cameroon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Cameroon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Africa"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Léonora_Miano"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Canada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Canada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#America"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Robert_James_Sawyer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#China -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#China">
+        <rdf:type rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Asia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Czech -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Czech">
+        <rdf:type rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Europe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Dark_Heart_of_the_Night -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Dark_Heart_of_the_Night">
+        <rdf:type rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Book"/>
+        <isWrittenBy rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Léonora_Miano"/>
+        <genre>Literary fiction</genre>
+        <title>Dark Heart of the Night</title>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2005</year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#France -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#France">
+        <rdf:type rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Europe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Isaac_Asimov -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Isaac_Asimov">
+        <rdf:type rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Author"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Japan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Japan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Asia"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Osamu_Dazai"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Jules_Verne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Jules_Verne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Author"/>
+        <nationality rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#France"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Karel_Čapek -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Karel_Čapek">
+        <rdf:type rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Author"/>
+        <nationality rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Czech"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Liu_Cixin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Liu_Cixin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Author"/>
+        <nationality rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#China"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Léonora_Miano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Léonora_Miano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Author"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#No_Longer_Human -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#No_Longer_Human">
+        <rdf:type rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Book"/>
+        <genre>Literary fiction</genre>
+        <title>No Longer Human</title>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1948</year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Osamu_Dazai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Osamu_Dazai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Author"/>
+        <writes rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#No_Longer_Human"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Robert_James_Sawyer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Robert_James_Sawyer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Author"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#The_Three-Body_Problem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#The_Three-Body_Problem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Book"/>
+        <isWrittenBy rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Liu_Cixin"/>
+        <genre>Science Fiction</genre>
+        <title>The Three-Body Problem</title>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#United_States -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#United_States">
+        <rdf:type rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#America"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Isaac_Asimov"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#War_with_the_Newts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#War_with_the_Newts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Book"/>
+        <isWrittenBy rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Karel_Čapek"/>
+        <genre>Science Fiction</genre>
+        <title>War with the Newts</title>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1936</year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#The_Stars,_Like_Dust -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#The_Stars,_Like_Dust">
+        <rdf:type rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Book"/>
+        <isWrittenBy rdf:resource="http://www.semanticweb.org/keg/ontologies/2021/4/untitled-ontology-5#Isaac_Asimov"/>
+        <genre>Science Fiction</genre>
+        <title>The Stars, Like Dust</title>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1951</year>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
